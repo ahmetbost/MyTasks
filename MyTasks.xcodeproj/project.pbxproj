@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01D1009A2DCF9C89002820C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D100972DCF9C89002820C2 /* ContentView.swift */; };
+		01D1009B2DCF9C89002820C2 /* MyTasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D100982DCF9C89002820C2 /* MyTasksApp.swift */; };
+		01D1009C2DCF9C89002820C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D100962DCF9C89002820C2 /* Assets.xcassets */; };
+		01D1009F2DCF9C9A002820C2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1009E2DCF9C95002820C2 /* Task.swift */; };
+		01D100A22DCFA0AF002820C2 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D100A12DCFA0AF002820C2 /* AddTaskView.swift */; };
+		01D100B32DCFB536002820C2 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D100B22DCFB536002820C2 /* TaskListViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		01D100882DCF9C70002820C2 /* MyTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D100962DCF9C89002820C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01D100972DCF9C89002820C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01D100982DCF9C89002820C2 /* MyTasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksApp.swift; sourceTree = "<group>"; };
+		01D1009E2DCF9C95002820C2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		01D100A12DCFA0AF002820C2 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		01D100B22DCFB536002820C2 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		01D1008A2DCF9C70002820C2 /* MyTasks */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyTasks;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		01D100852DCF9C6F002820C2 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		01D1007F2DCF9C6F002820C2 = {
 			isa = PBXGroup;
 			children = (
-				01D1008A2DCF9C70002820C2 /* MyTasks */,
+				01D100992DCF9C89002820C2 /* MyTasks */,
 				01D100892DCF9C70002820C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,43 @@
 				01D100882DCF9C70002820C2 /* MyTasks.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		01D100992DCF9C89002820C2 /* MyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				01D1009D2DCF9C8E002820C2 /* Model */,
+				01D100A02DCF9E20002820C2 /* View */,
+				01D100B12DCFB51E002820C2 /* ViewModel */,
+				01D100962DCF9C89002820C2 /* Assets.xcassets */,
+				01D100982DCF9C89002820C2 /* MyTasksApp.swift */,
+			);
+			path = MyTasks;
+			sourceTree = "<group>";
+		};
+		01D1009D2DCF9C8E002820C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01D1009E2DCF9C95002820C2 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01D100A02DCF9E20002820C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01D100972DCF9C89002820C2 /* ContentView.swift */,
+				01D100A12DCFA0AF002820C2 /* AddTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01D100B12DCFB51E002820C2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01D100B22DCFB536002820C2 /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +103,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				01D1008A2DCF9C70002820C2 /* MyTasks */,
 			);
 			name = MyTasks;
 			packageProductDependencies = (
@@ -109,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D1009C2DCF9C89002820C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D1009A2DCF9C89002820C2 /* ContentView.swift in Sources */,
+				01D1009F2DCF9C9A002820C2 /* Task.swift in Sources */,
+				01D100B32DCFB536002820C2 /* TaskListViewModel.swift in Sources */,
+				01D1009B2DCF9C89002820C2 /* MyTasksApp.swift in Sources */,
+				01D100A22DCFA0AF002820C2 /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
